@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="authors" content="Sudhanshu Barnwal">
+    <meta name="keywords" content="gym,body,biceps,triceps,workout,Perfect body,Push ups,dumble,protein,handsome,athlete,sports,hardwork, ">
+    <meta name="description" content="Bheem Gym is a large room, usually containing special equipment, where people go to do physical exercise and get fit. The gym has exercise bikes and running machines. While some guests play golf, others work out in the hotel gym. The large gym offers a variety of exercise equipment and weights going up to 100 pounds.">
+    <meta name="robots" content="INDEX,FOLLOW">
+    <title>BHEEM GYM</title>
+    <link rel="icon" href="bgym.png" width="16px" height="16px">
+    <link rel="stylesheet" href="bgym.css">
+</head>
+<body>
+    <header>
+        <h1 align="center" class="heading"><u>Bheem</u>&nbsp; <u>Gym</u></h1>
+        <nav>
+            <h1><img width="60px" height="50px" onclick="Oln()" src="https://i0.wp.com/css-tricks.com/wp-content/uploads/2012/10/threelines.png" alt="rnavimmg"></h1>
+            <ul id="leftnav" class="navigation">
+                <li><img src="bgym.png" alt="Bheemgymlogo"> &nbsp; <b onclick="Cln()" id="cross">&#10060;</b></li>
+                <li class="nav"><a target="_blank" href="#">Home</a></li>
+                <li class="nav"><a target="_blank" href="#">Services</a></li>
+                <li class="nav"><a target="_blank" href="#">About us</a></li>
+                <li class="nav"><a target="_blank" href="https://errorsd.netlify.app/bmisd.html">Fitness Calcii</a></li>
+            </ul>
+            <h1><img width="60px" height="50px" onclick="Orn()" src="https://i0.wp.com/css-tricks.com/wp-content/uploads/2012/10/threelines.png" alt="lnavimmg"></h1>
+            <ul id="rightnav" class="link">
+                <li> <b onclick="Crn()" id="crossofr"> &#10060;</b></li>
+                <li class="btn"><a href="https://wa.me/+919004877026" target="_blank">Call us</a></li>
+                <li class="btn"><a target="_blank" href="mailto:sudhanshub810@gmail.com">Email us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <form action="gym.php" target="_blank">
+        <h2><u>About Yourself</u></h2>
+        <label><input type="text" name="Name" autofocus class="inp" id="name" autocomplete="off" 
+            placeholder="Enter Your Name"></label>
+
+        <label><input type="text" maxlength="10" pattern="[0-9]{10}" title="Enter your mobile number in 10 digits number only for e.g. 90048XXXXX" autocomplete="off" name="Mobile No" class="inp" placeholder="Enter Your Mobile No" id="mono">
+        </label>
+
+         <label><select class="inp"><optgroup label="Gender">
+            <option value="Male"> MALE </option>
+            <option value="Female"> FEMALE </option>
+            <option value="Transgender"> TRANSGENDER </option>
+         </optgroup></select></label>
+         <label><textarea name="Address" class="inp" placeholder="Enter your Residental Address..........." cols="30" rows="4"></textarea></label>
+         <input class="fbtn" type="submit" value="Submit"><input class="fbtn" type="reset" value="Reset">
+    </form>
+
+    <script>
+        function Cln(){
+            document.getElementById("leftnav").style.display = "none";
+        }
+        function Oln(){
+            document.getElementById("leftnav").style.display = "flex";
+        }
+        function Crn(){
+            document.getElementById("rightnav").style.display = "none";
+        }
+        function Orn(){
+            document.getElementById("rightnav").style.display = "flex";
+        }
+    </script>
+    
+</body>
+</html>
